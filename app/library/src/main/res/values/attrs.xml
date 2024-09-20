@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BorderedTextView">
+        <attr name="borderColor" format="color" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="customFont" format="reference" />
+        <attr name="gradientStartColor" format="color" />
+        <attr name="gradientCenterColor" format="color" />
+        <attr name="gradientEndColor" format="color" />
+    </declare-styleable>
+</resources>
