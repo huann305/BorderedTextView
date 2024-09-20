@@ -2,6 +2,21 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
 }
+apply plugin: 'maven-publish'
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'com.huann.305' // Thay thế với ID group của bạn
+            artifactId = 'BorderedTextView' // Tên thư viện
+            version = '1.0.0' // Phiên bản của thư viện
+
+            afterEvaluate {
+                from components["release"] // Sử dụng cấu hình "release"
+            }
+        }
+    }
+}
 
 android {
     namespace 'com.huann305.library'
